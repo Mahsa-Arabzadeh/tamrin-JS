@@ -12,6 +12,7 @@ function calc(vorodi = []) {
 calc(num);
 
 // tamrin 2: maximum number in varible.
+let bishtarin = [2, 4, 7, 0];
 function calc(vorodi = []) {
   let bishtarin = [2, 4, 7, 0];
   let maxNum = bishtarin[0]; // mosavi ba hadaghal tarin adaad.
@@ -24,16 +25,19 @@ function calc(vorodi = []) {
 }
 calc(bishtarin);
 
-// tamrin 3:
-let kochik = [9, 4, 7, 900];
-let minNumber = kochik[0];
-
-for (let i = 0; i < kochik.length; i++) {
-  if (kochik[i] < minNumber) {
-    minNumber = kochik[i];
+// tamrin 3: kochiktarin addad array.
+let kochik = [2, 4, 89, 1];
+function calce(vorodi = []) {
+  let kochik = [2, 4, 7, 0];
+  let minNum = kochik[0]; // mosavi ba hadaghal tarin adaad.
+  for (let i = 0; i < vorodi.length; i++) {
+    if (vorodi[i] < minNum) {
+      minNum = vorodi[i];
+    }
   }
+  console.log(minNum);
 }
-console.log(minNumber);
+calce(kochik);
 
 // tamrin 4: average of number
 let number = [1, 2, 3, 2];
