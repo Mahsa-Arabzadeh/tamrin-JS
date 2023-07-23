@@ -53,16 +53,17 @@ average(number);
 
 //tamrin 5: sum of numbers and sum of strings seperate
 let numm = [1, 3, 5, "jafar", "changiz", "khateri", 4];
-
 function sumOfBoth(vorodi = []) {
   let sum = 0;
+  let str = 0;
   for (let i = 0; i < vorodi.length; i++) {
     if (typeof numm[i] === "number") {
       sum += numm[i];
     } else if (typeof numm[i] === "string") {
-      sum += numm[i];
+      str += numm[i];
     }
   }
   console.log(sum);
+  console.log(str);
 }
 sumOfBoth(numm);
