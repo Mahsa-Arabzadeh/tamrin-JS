@@ -11,16 +11,18 @@ function calc(vorodi = []) {
 }
 calc(num);
 
-// tamrin 2:
-let mahsa = [2, 4, 7, 0];
-let maxNumber = mahsa[0]; // maxNumber = 2
-
-for (let i = 0; i < mahsa.length; i++) {
-  if (mahsa[i] > maxNumber) {
-    maxNumber = mahsa[i];
+// tamrin 2: maximum number in varible.
+function calc(vorodi = []) {
+  let bishtarin = [2, 4, 7, 0];
+  let maxNum = bishtarin[0]; // mosavi ba hadaghal tarin adaad.
+  for (let i = 0; i < vorodi.length; i++) {
+    if (vorodi[i] > maxNum) {
+      maxNum = vorodi[i];
+    }
   }
+  console.log(maxNum);
 }
-console.log(maxNumber);
+calc(bishtarin);
 
 // tamrin 3:
 let kochik = [9, 4, 7, 900];
@@ -60,5 +62,3 @@ function sumOfBoth(vorodi = []) {
   console.log(sum);
 }
 sumOfBoth(numm);
-
-// factoriel numbers:
